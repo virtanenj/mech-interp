@@ -1,0 +1,44 @@
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{soul}  % gives st{} to do strikethrough text
+\usepackage{listings} % Write code eg by \verbatim{} NB lstlistings does not work
+\usepackage{bbold}
+\usepackage{tikz}
+\usepackage{xparse} % For taking optional arguments in newcommand with `
+\usepackage{mathtools}
+
+% Proper date formatting for today dd/mm/yyyy
+% ...
+
+% \usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+\usepackage[backend=biber, style=numeric]{biblatex}
+
+\addbibresource{bibliography.bib}  % Uncomment to use bibliography file named `bibliography.bib`
+
+% Probability terms
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+% Boldface vector notation
+\newcommand{\vect}[1]{\ensuremath{\mathbf{#1}}}
+% Number sets
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\naturals}{\mathbb{N}}
+% Indicator function
+\newcommand{\indicator}[2]{\mathbf{1}_{#1}(#2)}
+% Short in text code snippets
+\newcommand{\code}[1]{\texttt{#1}}
+% Define `\argmin` and `\argmax`
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+% Define trace
+% \DeclareMathOperator{\Tr}{Tr}
+% Definition equality := and =:
+\newcommand{\defeq}{\vcentcolon=}
+\newcommand{\eqdef}{=\vcentcolon}
