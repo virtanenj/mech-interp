@@ -11,4 +11,7 @@
 *.synctex.gz
 *pth
 data/*
+data/
 fun.ipynb
+__pycache__/
+*.tar.gz
